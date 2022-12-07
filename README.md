@@ -25,3 +25,6 @@ INSERT INTO `crud`.`new_table` (`idnew_table`, `task_name`, `task_description`) 
 INSERT INTO `crud`.`new_table` (`idnew_table`, `task_name`, `task_description`) VALUES ('3', 'Make a breakfast', 'Tom-Kha soup with chidren meat, sounds delicious to me ');
 INSERT INTO `crud`.`new_table` (`idnew_table`, `task_name`, `task_description`) VALUES ('4', 'Morning workout', 'Get off the computer and do 20 pushups');
 INSERT INTO `crud`.`new_table` (`idnew_table`, `task_name`, `task_description`) VALUES ('5', 'Consume the primodial voidness of existance insted of coffee', 'Someone changed the cans in places, so you decided to put anti-matter in your morning coffee instead of sugar. Prepare to the huge explosion');
+
+# Installation
+Also I recomend you to rename you project folder to just CRUD, due to the technical issues :p
