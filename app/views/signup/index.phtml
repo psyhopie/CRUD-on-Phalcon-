@@ -1,0 +1,19 @@
+<h2>Here you can create your task</h2>
+
+<?php echo $this->tag->form("CRUD/signup/register"); ?>
+
+<p>
+    <label for="task_name">Task name</label><br>
+    <?php echo $this->tag->textField("task_name"); ?>
+</p>
+
+<p>
+    <label for="task_description">Task description</label><br>
+    <?php echo $this->tag->textField("task_description"); ?>
+</p>
+
+<p>
+    <?php echo $this->tag->submitButton(["Append task", 'class' => 'btn btn-success']); ?>
+</p>
+
+</form>
