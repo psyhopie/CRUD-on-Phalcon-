@@ -1,6 +1,6 @@
 # CRUD on vanilla  Phalcon
 
-As it was assigned by Alexander Belugin **(Mayby I'll add tag later)** I've created the test version of CRUD on Phalcon only. Even JS weren't used in this case. This project could be useful for you as a fundamental web-page on which could be based anything else backend dependent.
+As it was assigned by Aleksandr Belugin. I've created the test version of CRUD on Phalcon only. Even JS weren't used in this case. This project could be useful for you as a fundamental web-page on which could be based anything else backend dependent.
 
 
 # Installation
@@ -16,7 +16,7 @@ Tbh I'm way too lazy to describe that in detail so... I have an Phalcon installa
 `task_name` varchar(100) NOT NULL,  
 `task_description` varchar(500) DEFAULT NULL,  
 PRIMARY KEY (`idnew_table`)  
-) ENGINE=InnoDB AUTO_INCREMENT=34 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 - Username for database is **root**. Password is empty string. DBname is **crud** and address to run this magnificent piece of ~~shit~~  code is **127.0.0.1:3306**.
 - Then to have a test data, I recommend you to paste this command
