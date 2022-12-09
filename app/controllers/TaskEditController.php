@@ -10,12 +10,9 @@ class TaskEditController extends Controller
     }
 
     public function ediditAction(){
-        $id = $this->request->getPost($this->view->idnew_table);
+        $id = $this->request->getPost("idnew_table");
         $user = NewTable::findFirst($id);
 
-        $this->view->idnew_table=$user->idnew_table;
-        $this->view->task_name=$user->task_name;
-        $this->view->task_description=$user->task_description;
         $success = $user->save(
             $this->request->getPut(),
             [

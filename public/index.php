@@ -7,6 +7,7 @@ use Phalcon\Di\FactoryDefault;
 use Phalcon\Tag;
 use Phalcon\Mvc\Url as UrlProvider;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+use Phalcon\Mvc\Micro;
 
 // Define some absolute path constants to aid in locating resources
 define('BASE_PATH', dirname(__DIR__));
@@ -73,5 +74,3 @@ try {
 } catch (\Exception $e) {
     echo 'Exception: ', $e->getMessage();
 }
-
-
