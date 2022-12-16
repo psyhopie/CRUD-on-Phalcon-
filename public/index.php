@@ -59,7 +59,7 @@ $di->set(
     'url',
     function () {
         $url = new UrlProvider();
-        $url->setBaseUri('/');
+        $url->setBaseUri();
         return $url;
     }
 );

@@ -2,8 +2,7 @@
 
 echo "<h1>Hello!</h1>";
 
-//echo $this->tag->linkTo(["CRUD/signup", "Sign Up Here!", 'class' => 'btn btn-primary']);
-echo $this->tag->linkTo(["CRUD/signup", "Create task!", 'class' => 'btn btn-success']);
+echo $this->tag->linkTo(["/taskCreate", "Create task!", 'class' => 'btn btn-success']);
 
 if ($users->count() > 0) {
     ?>

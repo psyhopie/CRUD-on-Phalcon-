@@ -26,7 +26,7 @@ class TaskDeleteController extends Controller
             echo "Ne, pogodi";
         }
         set_time_limit(1);
-        $this->response->redirect('/CRUD');
+        $this->response->redirect();
         $this->view->disable();
 
     }

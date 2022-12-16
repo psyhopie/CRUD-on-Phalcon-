@@ -26,11 +26,11 @@ class SignupController extends Controller
         if ($success) {
             echo "Thanks for signing up your task!";
             set_time_limit(1);
-            $this->response->redirect('/CRUD');
+            $this->response->redirect();
         } else {
             echo "Sorry, the following problems were generated: ";
             set_time_limit(1);
-            $this->response->redirect('/CRUD');
+            $this->response->redirect();
 
             $messages = $user->getMessages();
 
