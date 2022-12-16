@@ -4,7 +4,7 @@ echo "<h1>Hello!</h1>";
 
 echo $this->tag->linkTo(["/taskCreate", "Create task!", 'class' => 'btn btn-success']);
 
-if ($users->count() > 0) {
+if ($tasks->count() > 0) {
     ?>
     <div>⠀</div>
     <table class="table table-bordered table-hover">
@@ -19,18 +19,17 @@ if ($users->count() > 0) {
         </thead>
         <tfoot>
         <tr>
-            <td colspan="3">Task quantity: <?php echo $users->count(); ?></td>
+            <td colspan="3">Task quantity: <?php echo $tasks->count(); ?></td>
         </tr>
         </tfoot>
         <tbody>
-        <?php foreach ($users as $user) { ?>
-            <?php $deleteUrl = 'localhost/CRUD/delete?id=' . $user->idnew_table ?>
+        <?php foreach ($tasks as $task) { ?>
             <tr>
-                <td><?php echo $user->idnew_table;?></td>
-                <td><?php echo $user->task_name;?></td>
-                <td><?php echo $user->task_description;?></td>
-                <td > <?php echo $this->tag->linkTo(["CRUD/taskEdit/index/" . $user->idnew_table, "Edit", 'class' => 'btn btn-primary mx-auto']);?> </td>
-                <td><?php echo $this->tag->linkTo(['CRUD/taskDelete/index/' . $user->idnew_table, 'Delete', 'class' => 'btn btn-danger mx-auto']) ?></td>
+                <td><?php echo $task->idnew_table;?></td>
+                <td><?php echo $task->task_name;?></td>
+                <td><?php echo $task->task_description;?></td>
+                <td > <?php echo $this->tag->linkTo(["/taskEdit/index/" . $task->idnew_table, "Edit", 'class' => 'btn btn-primary mx-auto']);?> </td>
+                <td><?php echo $this->tag->linkTo(['/taskDelete/index/' . $task->idnew_table, 'Delete', 'class' => 'btn btn-danger mx-auto']) ?></td>
             </tr>
         <?php } ?>
         </tbody>

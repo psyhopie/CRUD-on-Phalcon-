@@ -3,7 +3,7 @@
 use Phalcon\Mvc\Controller;
 use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
 
-class SignupController extends Controller
+class TaskCreateController extends Controller
 {
     public function indexAction()
     {
@@ -12,10 +12,10 @@ class SignupController extends Controller
 
     public function registerAction()
     {
-        $user = new NewTable();
+        $task = new NewTable();
 
         // Store and check for errors
-        $success = $user->save(
+        $success = $task->save(
             $this->request->getPost(),
             [
                 "task_name",
@@ -32,7 +32,7 @@ class SignupController extends Controller
             set_time_limit(1);
             $this->response->redirect();
 
-            $messages = $user->getMessages();
+            $messages = $task->getMessages();
 
             foreach ($messages as $message) {
                 echo $message->getMessage(), "<br/>";

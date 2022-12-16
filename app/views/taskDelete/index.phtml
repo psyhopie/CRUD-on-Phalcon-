@@ -4,17 +4,17 @@
 
 <p>
     <label hidden for="idnew_table">ID</label><br>
-    <?php echo $this->tag->textField(["idnew_table", 'value' => $user->idnew_table, 'hidden' => 'true' ]); ?>
+    <?php echo $this->tag->textField(["idnew_table", 'value' => $task->idnew_table, 'hidden' => 'true' ]); ?>
 </p>
 
 <p>
     <label for="task_name">Task name</label><br>
-    <?php echo $this->tag->textField(["task_name", 'value' => $user->task_name]); ?>
+    <?php echo $this->tag->textField(["task_name", 'value' => $task->task_name]); ?>
 </p>
 
 <p>
     <label for="task_description">Task description</label><br>
-    <?php echo $this->tag->textField(["task_description", 'value' => $user->task_description]); ?>
+    <?php echo $this->tag->textField(["task_description", 'value' => $task->task_description]); ?>
 </p>
 
 <p>

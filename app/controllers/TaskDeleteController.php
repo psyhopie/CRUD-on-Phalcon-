@@ -5,15 +5,15 @@ use Phalcon\Mvc\Controller;
 class TaskDeleteController extends Controller
 {
     public function indexAction($id) {
-        $this->view->user = NewTable::findFirst($id);
+        $this->view->task = NewTable::findFirst($id);
     }
 
     public function deleleteAction(){
         $id = $this->request->getPost("idnew_table");
-        $user = NewTable::findFirst($id);
+        $task = NewTable::findFirst($id);
 
-        $success = $user->delete(
-            $this->request->getPut(),
+        $success = $task->delete(
+            $this->request->getPost(),
             [
                 "idnew_table",
                 "task_name",
